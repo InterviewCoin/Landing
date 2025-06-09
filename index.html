@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterviewCoin: Get Paid for Your Interview Tasks</title>
+    <link rel="shortcut icon" type="image/png" href="img/InterviewCoin_logo_optimized.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <style>
+        .hero-section {
+            /* You can add a subtle pattern or gradient here if desired */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); 
+        }
+        .benefit-icon {
+            font-size: 3rem; /* Increased icon size for "How it works" */
+            margin-bottom: 1rem;
+            color: var(--bs-primary); /* This relies on Bootstrap (or your app.css) defining --bs-primary */
+        }
+        .testimonial-card {
+            border: 0; /* Remove default card border if using shadow for depth */
+        }
+        .list-unstyled h5 {
+            font-size: 1.1rem; /* Slightly smaller headings for list items */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 py-3">
+        <div class="container px-3">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="img/InterviewCoin_logo_optimized.png" alt="InterviewCoin Logo" style="height: 30px; margin-right: 10px;" class="navbar-main-logo">
+                InterviewCoin (NTV)
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start offcanvas-lg" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarOffcanvasLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container-fluid" id="main-area-wrapper">
+        <div class="row d-flex flex-nowrap">
+            <div class="col py-3 pe-5"> 
+                
+                <div class="homepage-content"> 
+                    <section class="hero-section text-white py-5" style="background-color: #4A5568;">
+                        <div class="container text-center">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 text-lg-start">
+                                    <h1 class="display-4 fw-bold mb-3">Revolutionizing Hiring: Where Talent Gets Paid & Companies Secure Invested Talent.</h1>
+                                    <p class="lead mb-4">
+                                        InterviewCoin connects skilled professionals with companies that compensate for interview tasks, facilitating fair compensation for their efforts and attracting dedicated candidates. Stop working for free during interviews. Companies, attract candidates who are serious about the opportunity. It's a win-win.
+                                    </p>
+                                    <a href="#how-it-works" class="btn btn-outline-light btn-lg mb-2 mb-lg-0">Learn How It Works</a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="img/professionals_and_currency.png" alt="Illustration of professionals and currency" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="candidates" class="py-5">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-2">
+                                    <h2 class="fw-bold mb-3">For Candidates: Your Skills are Valuable. Get Compensated with InterviewCoin (NTV).</h2>
+                                    <p class="lead text-muted mb-4">Tired of spending hours on interview tasks with no reward? InterviewCoin ensures your expertise is recognized and paid with NTV (InterviewCoin).</p>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cash-coin me-3 mt-1 text-primary flex-shrink-0" viewBox="0 0 16 16">
+                                                <path d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.935-1.37-1.169-.866-.218-1.379-.466-1.379-.963 0-.506.484-.895 1.37-.972V8.5h.375v.45c.747.07 1.255.522 1.255 1.17 0 .562-.377.892-1.25.992-.833.094-1.31.422-1.31.979zm1.37-1.472c-.05.067-.062.142-.062.216 0 .124.054.226.163.303.12.086.295.144.488.157a2 2 0 0 0 .498-.091c.058-.025.098-.06.11-.1.065-.218.043-.382-.028-.515a1.2 1.2 0 0 0-.49-.26c-.25-.085-.4-.14-.46-.21-.063-.074-.094-.175-.094-.297 0-.188.135-.37.375-.475a1.7 1.7 0 0 1 .569-.145c.299-.004.59.069.803.215.07.048.11.11.11.177 0 .093-.03.166-.078.215-.14.144-.383.21-.688.22-.442.015-.827-.053-1.095-.16z"/>
+                                                <path d="M4 0a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M1.223 12.645a1.7 1.7 0 0 1 .243.654.5.5 0 0 0 .832.196l.31-.31A2.7 2.7 0 0 0 4.72 14.6a.5.5 0 0 0 .704-.045L6.027 13.5a1.7 1.7 0 0 1 .21-.191l.31.31a.5.5 0 0 0 .832-.196c.243-.654.243-1.39.003-2.037a.5.5 0 0 0-.832.196l-.31.31A2.7 2.7 0 0 0 4.72 10.3a.5.5 0 0 0-.704.045L3.413 11.5a1.7 1.7 0 0 1-.21.191l-.31-.31a.5.5 0 0 0-.832.196c-.243.654-.243 1.39.003 2.036z"/>
+                                            </svg>
+                                            <div>
+                                                <h5 class="fw-semibold">Get Paid in NTV for Interview Tasks</h5>
+                                                <p class="text-muted">Your time and expertise are valuable. Get compensated when companies use your skills in their hiring process.</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-lightbulb me-3 mt-1 text-primary flex-shrink-0" viewBox="0 0 16 16">
+                                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.99 1.99 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                                                <path d="M5 14.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+                                            </svg>
+                                            <div>
+                                                <h5 class="fw-semibold">Showcase Your True Abilities</h5>
+                                                <p class="text-muted">Demonstrate your skills through real-world tasks and let your work speak for itself.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 order-lg-1 d-none d-lg-block">
+                                    <img src="img/candidate_working_on_task.png" alt="Candidate working on a task" class="img-fluid rounded shadow" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="companies" class="py-5 bg-light">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h2 class="fw-bold mb-3">For Companies: Attract Invested Talent. Build a Stronger Team.</h2>
+                                    <p class="lead text-muted mb-4">Attract More Engaged Applicants. Compensated tasks encourage a greater demonstration of commitment from candidates.</p>
+                                     <ul class="list-unstyled mb-4">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill me-3 mt-1 text-primary flex-shrink-0" viewBox="0 0 16 16">
+                                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                            </svg>
+                                            <div>
+                                                <h5 class="fw-semibold">Identify More Invested Candidates</h5>
+                                                <p class="text-muted">Payment for tasks signals applicants who are willing to dedicate effort, indicating a stronger interest in the role and your company.</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-award me-3 mt-1 text-primary flex-shrink-0" viewBox="0 0 16 16">
+                                                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68z"/>
+                                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                                            </svg>
+                                            <div>
+                                                <h5 class="fw-semibold">Enhance Your Employer Brand</h5>
+                                                <p class="text-muted">Show you value candidates' time and effort, positioning you as a forward-thinking employer.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 d-none d-lg-block">
+                                    <img src="img/company_screening.png" alt="Company representative reviewing candidate work" class="img-fluid rounded shadow">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="how-it-works" class="py-5">
+                        <div class="container">
+                            <h2 class="text-center fw-bold mb-5">How InterviewCoin Works</h2>
+                            <div class="row text-center g-4">
+                                <div class="col-md-3">
+                                    <div class="p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-file-earmark-text benefit-icon" viewBox="0 0 16 16">
+                                          <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                                          <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                        </svg>
+                                        <h4 class="fw-semibold">1. Define & Post Task</h4>
+                                        <p class="text-muted">Companies define an interview task (for example, initial screening call), assign an NTV (InterviewCoin) amount, and schedule it with their selected candidate.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                     <div class="p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-person-check benefit-icon" viewBox="0 0 16 16">
+                                          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                                          <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.303.49-.559.793-.775A4.5 4.5 0 0 0 8 9c-4 0-5 3-5 4s1 1 1 1z"/>
+                                        </svg>
+                                        <h4 class="fw-semibold">2. Apply & Complete</h4>
+                                        <p class="text-muted">The candidate receives the details and completes the assigned interview task, demonstrating their skills.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-credit-card-2-front benefit-icon" viewBox="0 0 16 16">
+                                          <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                                          <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
+                                        </svg>
+                                        <h4 class="fw-semibold">3. Evaluate & Reward</h4>
+                                        <p class="text-muted">Upon completion, the company sends the agreed-upon NTV (InterviewCoin) to the candidate's wallet.</p>
+                                    </div>
+                                </div>
+                                 <div class="col-md-3">
+                                    <div class="p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-person-raised-hand benefit-icon" viewBox="0 0 16 16">
+                                          <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.31-.155a.5.5 0 0 1 .113-.676l.648-.648A.5.5 0 0 0 7.64 2H11.5a.5.5 0 0 1 .5.5v1.293a.5.5 0 0 1-.146.353l-1.091 1.092a.5.5 0 0 0-.146.353V8.5a.5.5 0 0 1-1 0V6.957a.5.5 0 0 0-.146-.353L8.207 5.5a.5.5 0 0 0-.707 0L6.146 6.854a.5.5 0 0 0-.146.353zM3.5 9a.5.5 0 0 1 .5.5v2.879a.5.5 0 0 1-.146.353l-1.091 1.092a.5.5 0 1 1-.708-.708L3.5 11.672V9.5a.5.5 0 0 1 .5-.5"/>
+                                        </svg>
+                                        <h4 class="fw-semibold">4. Hire with Confidence</h4>
+                                        <p class="text-muted">Companies assess the completed task for their hiring decisions, benefiting from a more engaged process. Candidates are fairly compensated for their work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="our-vision" class="py-5 text-center" style="background-color: #EDF2F7;"> 
+                        <div class="container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-brightness-high-fill benefit-icon mb-3 text-info" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                            </svg>
+                            <h2 class="fw-bold mb-3">Our Vision: Valuing Effort, Building Futures</h2>
+                            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                                At InterviewCoin, we believe the hiring process should be a partnership built on mutual respect. We envision a world where every candidate's effort in demonstrating their skills is acknowledged and valued, and where companies can confidently identify and attract truly invested talent. Our mission is to make this vision a reality through fair compensation and a more transparent process for everyone involved.
+                            </p>
+                            <p class="mt-4">
+                                Join us in reshaping the future of hiring.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="scenarios" class="py-5">
+                        <div class="container">
+                            <h2 class="text-center fw-bold mb-5">InterviewCoin in Action</h2>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-4 d-flex">
+                                    <div class="card shadow-sm p-3 w-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-workspace me-2 text-success" viewBox="0 0 16 16"><path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/><path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/></svg> The Dedicated Developer</h5>
+                                            <p class="card-text text-muted small">Sara, a talented developer, was hesitant to spend another weekend on an unpaid coding challenge. With InterviewCoin, she found a company offering NTV for a well-defined task. She delivered excellent work, got compensated, and felt genuinely valued, leading to a successful hire for a company that appreciated her commitment from day one.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 d-flex">
+                                    <div class="card shadow-sm p-3 w-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building-check me-2 text-info" viewBox="0 0 16 16"><path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514Z"/><path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/><path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/></svg> The Strategic Startup</h5>
+                                            <p class="card-text text-muted small">TechLaunch Co. needed to quickly find a senior marketer. Instead of generic applications, they used InterviewCoin to propose a paid strategy-outlining task. This attracted high-caliber candidates who were willing to demonstrate their strategic thinking, leading to a faster, more informed hiring decision and a valuable new team member.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 d-flex"> 
+                                    <div class="card shadow-sm p-3 w-100 bg-light">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title fw-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow me-2 text-primary" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/></svg> A Win-Win Ecosystem</h5>
+                                            <p class="card-text text-muted small">By fostering an environment where candidates are paid for their expertise and companies gain access to truly engaged individuals, InterviewCoin creates a positive feedback loop. This elevates the quality of interactions, reduces wasted effort, and helps build stronger teams and more fulfilling careers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="final-cta" class="py-5">
+                        <div class="container text-center">
+                            <h2 class="fw-bold mb-3">Ready to Transform Your Interview Experience?</h2>
+                            <p class="lead text-muted mb-4">
+                                Whether you're a professional ready to be valued for your skills, or a company looking for dedicated talent, InterviewCoin is your platform.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="py-5 bg-light" id="contact">
+                        <div class="container">
+                            <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+                            <form name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    </body>
+</html>
