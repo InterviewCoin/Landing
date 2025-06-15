@@ -72,6 +72,7 @@
                                         InterviewCoin connects skilled professionals with companies that compensate for interview tasks, facilitating fair compensation for their efforts and attracting dedicated candidates. Stop working for free during interviews. Companies, attract candidates who are serious about the opportunity. It's a win-win.
                                     </p>
                                     <a href="#how-it-works" class="btn btn-outline-light btn-lg mb-2 mb-lg-0">Learn How It Works</a>
+                                    <a href="#waitlist" class="btn btn-warning btn-lg">Join Waitlist</a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-block">
                                     <img src="img/professionals_and_currency.png" alt="Illustration of professionals and currency" class="img-fluid rounded shadow">
@@ -254,6 +255,151 @@
                             </p>
                         </div>
                     </section>
+
+                    <section id="waitlist" class="py-5 text-center" style="background-color: #FFF8E1;">
+                      <div class="container" style="max-width: 600px;">
+                        <h2 class="fw-bold mb-3">Be the First to Know</h2>
+                        <p class="lead text-muted mb-4">
+                          Our platform is launching soon—join the waitlist today and get early access.
+                          <span class="fw-semibold">Companies in our pilot also receive exclusive perks.</span>
+                        </p>
+                    
+                        <form
+                          action="https://formspree.io/f/mkgbjqag"
+                          method="POST"
+                          id="waitlist-form"
+                          class="row g-3 justify-content-center text-start"
+                        >
+                          <!-- User Type -->
+                          <div class="col-12">
+                            <label class="form-label">I am a…</label>
+                            <div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="role"
+                                  id="role-individual"
+                                  value="Individual"
+                                  checked
+                                >
+                                <label class="form-check-label" for="role-individual">
+                                  Candidate
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="role"
+                                  id="role-company"
+                                  value="Company"
+                                >
+                                <label class="form-check-label" for="role-company">
+                                  Company
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <!-- Name & Email -->
+                          <div class="col-md-6">
+                            <label for="waitlist-name" class="form-label">Your Name</label>
+                            <input
+                              type="text"
+                              id="waitlist-name"
+                              name="name"
+                              class="form-control"
+                              placeholder="Jane Doe"
+                              required
+                            >
+                          </div>
+                          <div class="col-md-6">
+                            <label for="waitlist-email" class="form-label">Your Email</label>
+                            <input
+                              type="email"
+                              id="waitlist-email"
+                              name="email"
+                              class="form-control"
+                              placeholder="you@example.com"
+                              required
+                            >
+                          </div>
+                    
+                          <!-- Company fields (hidden unless role=Company) -->
+                          <div class="col-md-6 company-field d-none">
+                            <label for="company-name" class="form-label">Company Name</label>
+                            <input
+                              type="text"
+                              id="company-name"
+                              name="company_name"
+                              class="form-control"
+                              placeholder="Acme Corp"
+                            >
+                          </div>
+                          <div class="col-md-6 company-field d-none">
+                            <label for="company-website" class="form-label">Company Website</label>
+                            <input
+                              type="url"
+                              id="company-website"
+                              name="company_website"
+                              class="form-control"
+                              placeholder="https://example.com"
+                            >
+                          </div>
+                    
+                          <!-- Hiring needs to help you qualify -->
+                          <div class="col-12">
+                            <label for="hiring-needs" class="form-label">
+                              Tell us about your hiring needs (optional)
+                            </label>
+                            <textarea
+                              id="hiring-needs"
+                              name="hiring_needs"
+                              class="form-control"
+                              rows="3"
+                              placeholder="E.g. We're looking for 3-5 mid-level engineers in the next quarter."
+                            ></textarea>
+                          </div>
+                    
+                          <!-- Submit -->
+                          <div class="col-12 d-grid">
+                            <button type="submit" class="btn btn-warning btn-lg">
+                              Join Waitlist
+                            </button>
+                          </div>
+                    
+                          <div class="col-12">
+                            <p class="small text-muted">
+                              We respect your privacy. No spam—ever.
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </section>
+
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function () {
+                        const roleRadios = document.querySelectorAll('input[name="role"]');
+                        const companyFields = document.querySelectorAll('.company-field');
+                    
+                        function toggleCompanyFields() {
+                          const isCompany = document.getElementById('role-company').checked;
+                          companyFields.forEach(el => {
+                            el.classList.toggle('d-none', !isCompany);
+                            // make fields required only when visible
+                            const input = el.querySelector('input');
+                            if (input) input.required = isCompany;
+                          });
+                        }
+                    
+                        roleRadios.forEach(radio =>
+                          radio.addEventListener('change', toggleCompanyFields)
+                        );
+                        // initialize on page load
+                        toggleCompanyFields();
+                      });
+                    </script>
 
                     <section class="py-5 bg-light" id="contact">
                         <div class="container">
